@@ -787,7 +787,7 @@ impl Title {
             open_request: None,
             toast: None,
             icons: RefCell::new(std::collections::HashMap::new()),
-            splash: choose_splash(&splashes, seed, (today.month(), today.day())),
+            splash: Some("made by santxzz".to_owned()),(&splashes, seed, (today.month(), today.day())),
             splash_you: false,
             recent: std::cell::RefCell::new(None),
             rules: RefCell::new(None),
