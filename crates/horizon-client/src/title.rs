@@ -788,7 +788,7 @@ impl Title {
             toast: None,
             icons: RefCell::new(std::collections::HashMap::new()),
             splash: choose_splash(&splashes, seed, (today.month(), today.day())),
-            splash_you,
+            splash_you: false,
             recent: std::cell::RefCell::new(None),
             rules: RefCell::new(None),
             onboarding_finished: false,
